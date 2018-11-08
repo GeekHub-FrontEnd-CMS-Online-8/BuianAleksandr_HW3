@@ -23,7 +23,7 @@
     </div>  
   </header>
 
-  <section class = 'wraper'>
+<section class = 'wraper'>
     
     <header>
       <h2>Расскажите немного о себе...</h2>
@@ -50,12 +50,17 @@
         </p>        
         <p>
           <span>Пол:</span>
-            <input  type="radio" name="gender"                      
+            <label>
+              <input  type="radio" name="gender"                      
                     value="male" checked/>
-            <span class='text-after-iput'>мужской</span>
-            <input  type="radio" name="gender"                       
+              <span class='text-after-iput'>мужской</span>
+            </label>
+            <label>
+              <input  type="radio" name="gender"                       
                     value="female"/>
-            <span class='text-after-iput'>женский</span>
+              <span class='text-after-iput'>женский</span>
+            </label>
+            
         </p> 
         <p>
           <label> Возраст: 
@@ -71,29 +76,43 @@
           <span>Подробнее о себе</span>
         </legend>
         <fieldset class="input-group">
-          <p><input type="radio" name="gender2" 
+          <p>
+            <label>
+              <input type="radio" name="gender2" 
                     value="male" checked/>
               <span class="text-after-iput">Молодой человек</span>
+            </label>            
           </p>
-          <p><input type="radio" name="gender2" 
+          <p>
+            <label>
+               <input type="radio" name="gender2" 
                     value="female"/>
               <span class="text-after-iput">Девушка</span>
+            </label>          
           </p>
           <p>
-            <input type="date" name="bday"/>
-            <span class="text-after-iput"> Дата рождения</span>
+            <label>
+              <input type="date" name="bday"/>
+              <span class="text-after-iput"> Дата рождения</span>
+            </label>            
           </p> 
           <p>
-            <input type="text" name="family_status"/>
-            <span class="text-after-iput">Семейное положение</span>
+            <label>
+              <input type="text" name="family_status"/>
+              <span class="text-after-iput">Семейное положение</span>
+            </label>           
           </p>
           <p>
-            <input type="text" name="social_status"/>
-            <span class="text-after-iput"> Социальный статус</span>
+            <label>
+              <input type="text" name="social_status"/>
+              <span class="text-after-iput"> Социальный статус</span>
+            </label>            
           </p>
           <p>
-            <input type="text" name="address"/>
+            <label>
+              <input type="text" name="address"/>
             <span class="text-after-iput"> Место жительства</span>
+            </label>            
           </p>
         </fieldset >
           
@@ -102,16 +121,22 @@
             <span>Что вы обычно делаете на выходных:</span>
           </legend>
           <p>
-            <input type="checkbox" name="leisure1" value="sleep">
-            <span class="text-after-iput"> Сплю</span>
+            <label>
+              <input type="checkbox" name="leisure1" value="sleep">
+              <span class="text-after-iput"> Сплю</span>
+            </label>            
           </p>
           <p>
-            <input type="checkbox" name="leisure2" value="friends"> 
-            <span class="text-after-iput"> Гуляю с друзьями</span>
+            <label>
+              <input type="checkbox" name="leisure2" value="friends"> 
+              <span class="text-after-iput"> Гуляю с друзьями</span>
+            </label>          
           </p>
           <p>
-            <input type="checkbox" name="leisure3" value="fishing"> 
-            <span class="text-after-iput">Хожу на рыбалку</span>
+            <label>
+              <input type="checkbox" name="leisure3" value="fishing"> 
+              <span class="text-after-iput">Хожу на рыбалку</span>
+            </label>           
           </p>
         </fieldset>
 
@@ -133,20 +158,28 @@
             <span>Сколько книг вы прочитали за свою жизнь:</span>
           </legend>
           <p>
-            <input type="radio" name="many-books" value="0-10"/> 
-            <span class="text-after-iput">0-10</span>
+            <label>
+              <input type="radio" name="many-books" value="0-10"/> 
+              <span class="text-after-iput">0-10</span>
+            </label>
           </p>
           <p>
-            <input type="radio" checked name="many-books" value="11-20"/>
-            <span class="text-after-iput">11-20</span>
+            <label>
+              <input type="radio" checked name="many-books" value="11-20"/>
+              <span class="text-after-iput">11-20</span>
+            </label>
           </p>
           <p>
-            <input type="radio" name="many-books" value="21-50">
-            <span class="text-after-iput">21-50</span> 
+            <label>
+              <input type="radio" name="many-books" value="21-50">
+              <span class="text-after-iput">21-50</span>
+            </label> 
           </p>
           <p>
-            <input type="radio" checked name="many-books" value="50+"> 
-            <span class="text-after-iput">50+</span>
+            <label>
+              <input type="radio" checked name="many-books" value="50+"> 
+              <span class="text-after-iput">50+</span>
+            </label>
           </p>
         </fieldset>
               
@@ -181,16 +214,22 @@
           </legend>
           <span class="add-to-legend"><em>Выберите категории</em></span>
           <p>
-            <input type="checkbox" name="spam-equipment" value="yes">
-            <span class="text-after-iput">Оборудование</span> 
+            <label>
+              <input type="checkbox" name="spam-equipment" value="yes">
+              <span class="text-after-iput">Оборудование</span> 
+            </label>            
           </p>
           <p>
-            <input type="checkbox" name="spam-cooking" value="yes">
-            <span class="text-after-iput">Как приготовить обеды</span>
+            <label>
+              <input type="checkbox" name="spam-cooking" value="yes">
+              <span class="text-after-iput">Как приготовить обеды</span>
+            </label>
           </p>
           <p>
-            <input type="checkbox" name="spam-millionaire" value="yes">
-            <span class="text-after-iput">Заработай миллион за два дня!</span> 
+            <label>
+              <input type="checkbox" name="spam-millionaire" value="yes">
+              <span class="text-after-iput">Заработай миллион за два дня!</span> 
+            </label>      
           </p>
         </fieldset>
         
@@ -199,16 +238,22 @@
             <span>На сколько сложная задача:</span>
           </legend>
           <p>
-            <input type="radio" name="level_task" value="easily">
-            <span class="text-after-iput">Совсем нет</span>
+            <label>
+              <input type="radio" name="level_task" value="easily">
+              <span class="text-after-iput">Совсем нет</span>
+            </label>
           </p>
           <p>
-            <input type="radio" name="level_task" value="medium" checked>
-            <span class="text-after-iput">Так себе</span>
+            <label>
+              <input type="radio" name="level_task" value="medium" checked>
+              <span class="text-after-iput">Так себе</span>
+            </label>
           </p>
           <p>
-            <input type="radio" name="level_task" value="hard"/>
-            <span class="text-after-iput">Еле справились</span>
+            <label>
+              <input type="radio" name="level_task" value="hard"/>
+              <span class="text-after-iput">Еле справились</span>
+            </label>          
           </p>
         </fieldset>
       </fieldset>
